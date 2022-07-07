@@ -1,0 +1,40 @@
+.Sidebar {
+    display         : flex;
+    background-color: #c69963;
+    grid-column     : sidebar-start / sidebar-end;
+    grid-row        : 1 / -1;
+    justify-content : center;
+
+
+    
+
+
+    &__Span {
+        position        : relative;
+        top             : 30px;
+        background-color: azure;
+        height          : .2rem;
+        display         : inline-block;
+        width           : 5rem;
+
+        &::before,
+        &::after {
+            content         : "";
+            width           : 5rem;
+            height          : .2rem;
+            background-color: white;
+            display         : inline-block;
+            position        : absolute;
+            left            : 0;
+
+        }
+
+        &::before {
+            top: -1.5rem;
+        }
+
+        &::after {
+            top: 1.5rem;
+        }
+    }
+}

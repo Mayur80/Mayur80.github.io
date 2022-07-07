@@ -1,0 +1,97 @@
+.realtors{
+    background-color: #101d2c;
+    grid-column: col-start 7 / full-end;
+    display: grid;
+    
+    grid-template-rows: max-content;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    
+    grid-row-gap:.9rem;
+    padding: 5rem;
+    color: white;
+
+    &__h2{
+        
+        font-size: medium;
+        text-transform: uppercase;
+        
+
+    }
+    &__1{
+        padding-top: 1rem;
+        display: grid;
+        justify-self: start;
+        grid-template-columns: max-content 1fr;;
+        grid-template-rows: min-content;
+        align-items: center;
+        grid-gap: .8rem;
+
+        
+        
+        &--img{
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+
+        }
+        &--name{
+            
+           
+            justify-self: center;
+            
+        }
+    }
+    &__2{
+        padding-top: 1rem;
+        display: grid;
+        justify-self: start;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: min-content;
+        grid-gap: .8rem;
+        align-items: center;
+        
+        &--img{
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+
+        }
+        &--name{
+            
+            justify-self: center;
+            
+        }
+
+    }
+    &__3{
+        padding-top: 1rem;
+        display: grid;
+        justify-self: start;
+        grid-template-columns: max-content 1fr;;
+        grid-template-rows: min-content;
+        grid-gap: .8rem;
+        align-items: center;
+        
+        &--img{
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+
+        }
+        &--name{
+           
+            justify-self: center;
+            
+        }
+
+    }
+    &__h4{
+        font-size: 1.9rem;
+    }
+    &__p{
+        font-size: 1rem;
+    }
+
+}

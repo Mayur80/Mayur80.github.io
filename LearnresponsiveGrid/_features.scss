@@ -1,0 +1,32 @@
+.features{
+    
+    grid-column: center-start / center-end;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: start;
+    padding: 5rem;
+    grid-gap: 4rem;
+}
+.feature{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1rem;
+    
+    
+    &__Icon{
+        grid-row: 1 /span 2;
+        transform: translateY(-.6rem);
+    }
+    &__heading4{
+        color: rgb(197, 153, 99);
+        font-size:2.3rem;
+        font-family: 'Raleway', sans-serif;
+
+    }
+    &__para{
+        color: #e09016b2;
+        font-size: 2rem;
+        
+    }
+}
